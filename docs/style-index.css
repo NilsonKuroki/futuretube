@@ -39,8 +39,8 @@ input{
 
 menu{
     display: grid ;
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-template-rows:  repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows:  repeat(3, 1fr);
     grid-gap: 10px;
     width: 100vw;
     height: 84vh;
@@ -63,7 +63,21 @@ footer{
     justify-content: center;
     align-items: center;
 }
+.menuLateral{
+    grid-area: 1/1/4/1;
+    text-decoration: none;
+}
 
+.menuLateral ul{
+    padding-left: 3vw;
+    
+}
+.menuLateral a{
+    text-decoration: none;
+}
+.menuLateral li{
+    padding-top: 2vh;
+}
 @media screen and (max-width: 400px){
     menu{
         grid-template-columns: 1fr;
