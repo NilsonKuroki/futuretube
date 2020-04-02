@@ -10,7 +10,6 @@ header{
     height: 8vh;
     background-color: rgb(247, 101, 59);
 }
-
 header a{
     text-decoration: none;
     color: white;
@@ -21,32 +20,67 @@ header a{
     align-items: center;
     justify-content: center;
 }
-
 input{
     width: 90%;
     height: 50%;
-    
 }
 .title{
     grid-area: 1/1/1/2;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 menu{
     display: grid;
-    grid-template-columns: 30vw 1fr 30vw;
-    grid-template-rows: 8vw repeat(2, 1fr);
+    grid-template-columns:  20vw 3fr 25vw;
+    grid-template-rows: 2vw repeat(4, 1fr) 1fr;
     width: 100vw;
     height: 84vh;
 }
+.menuLateral{
+    grid-area: 1/1/4/1;
+    text-decoration: none;
+}
+.menuLateral ul{
+    padding-left: 3vw;
+}
+.menuLateral a{
+    text-decoration: none;
+}
+.menuLateral li{
+    padding-top: 2vh;
+    list-style-type: none;
+}
 .video-2{
-    grid-area: 2/2/2/3;
-    
+    grid-area: 2/2/5/3;
 }
 .video-2 video{
-    max-width: 100%;
+    width: 100%;
+}
+.video-1{
+    grid-area: 2/3/2/3;
+    display: flex;
+    justify-content: center;
+}
+.video-1 img{
+    max-height: 10vh;
+}
+.video-3{
+    grid-area: 3/3/3/3;
+    display: flex;
+    justify-content: center;
+}
+.video-3 img{
+    max-height: 10vh;
+}
+.button{
+    grid-area: 5/2/5/2;
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    width: 5vw;
+    height: 2vh;
 }
 footer{
     background-color: rgb(247, 101, 59);
@@ -57,7 +91,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 @media screen and (max-width: 400px){
     menu{
         grid-template-columns: 1fr;

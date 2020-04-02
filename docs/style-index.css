@@ -39,7 +39,7 @@ input{
 
 menu{
     display: grid ;
-    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-columns: 20vw repeat(4, 1fr) ;
     grid-template-rows:  repeat(3, 1fr);
     grid-gap: 10px;
     width: 100vw;
@@ -77,6 +77,7 @@ footer{
 }
 .menuLateral li{
     padding-top: 2vh;
+    list-style-type: none;
 }
 @media screen and (max-width: 400px){
     menu{
