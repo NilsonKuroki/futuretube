@@ -33,7 +33,7 @@ input{
 menu{
     display: grid;
     grid-template-columns:  20vw 3fr 25vw;
-    grid-template-rows: 2vw repeat(4, 1fr) 1fr;
+    grid-template-rows: 2vw repeat(4, 1fr);
     width: 100vw;
     height: 84vh;
 }
@@ -52,10 +52,10 @@ menu{
     list-style-type: none;
 }
 .video-2{
-    grid-area: 2/2/5/3;
+    grid-area: 2/2/5/2;
 }
 .video-2 video{
-    width: 100%;
+    max-width: 90%;
 }
 .video-1{
     grid-area: 2/3/2/3;
@@ -63,7 +63,7 @@ menu{
     justify-content: center;
 }
 .video-1 img{
-    max-height: 10vh;
+    max-height: 15vh;
 }
 .video-3{
     grid-area: 3/3/3/3;
@@ -71,7 +71,7 @@ menu{
     justify-content: center;
 }
 .video-3 img{
-    max-height: 10vh;
+    max-height: 15vh;
 }
 .button{
     grid-area: 5/2/5/2;
